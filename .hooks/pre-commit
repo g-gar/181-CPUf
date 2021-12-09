@@ -49,4 +49,4 @@ fi
 exec git diff-index --check --cached $against --
 
 dotnet tool restore
-dotnet tool run dotnet-format
+dotnet tool run dotnet-format --verbosity=detailed --fix-whitespace --folder /
